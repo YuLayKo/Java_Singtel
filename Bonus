@@ -1,0 +1,55 @@
+public class Rooster{
+
+	public static void sing(Language lan) {
+		if(lan.getName().equals("Danish"))
+		{
+			System.out.println("kykyliky ");
+		}
+		else if(lan.getName().equals("Dutch"))
+		{
+			System.out.println("kukeleku ");
+		}
+		else if(lan.getName().equals("Finnish"))
+		{
+			System.out.println("kukko kiekuu");
+		}
+		else if(lan.getName().equals("Myanmar"))
+		{
+			System.out.println("ouk ee ouk");
+		}
+	}
+
+}
+
+
+public class Language {
+	public String name;
+	public Language(String name)
+	{
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+
+}
+
+
+public class TestLanguage {
+	
+	Rooster roos = new Rooster();
+	
+	public static void main(String[] args)
+	{
+		Rooster.sing(new Language("Danish"));
+		Rooster.sing(new Language("Dutch"));
+		Rooster.sing(new Language("Myanmar"));
+		
+	}
+}
