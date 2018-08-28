@@ -1,0 +1,12 @@
+3. a. public class Rooster extends Chicken
+	{
+		public void sing()
+		{
+			System.out.println("Cock-a-doodle-do");
+		}
+	}
+	
+	b. Rooster is a Chicken
+	
+	
+	c. No
