@@ -1,0 +1,11 @@
+3. public interface Swim {
+	void canSwim();
+	}
+	
+	public class Dolphine implements Swim {
+
+		@Override
+		public void canSwim() {
+			System.out.println("Dolphine Swimming");
+		}
+	}
