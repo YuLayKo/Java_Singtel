@@ -1,0 +1,61 @@
+2. public class Character {
+		public String color;
+		public String getColor() {
+			return color;
+		}
+		public void setColor(String color) {
+			this.color = color;
+		}
+		public String getSize() {
+			return size;
+		}
+		public void setSize(String size) {
+			this.size = size;
+		}
+		public String size;
+
+	}
+
+	public class Shark extends Fish {
+
+		Character charc = new Character();
+		
+		public Shark()
+		{
+			charc.setSize("large");
+			charc.setColor("grey");
+		}
+		
+		@Override
+		public void swim() {
+			System.out.println("Shark swimming");
+		}
+		
+		public void eat(Fish f)
+		{
+			System.out.println("eating: " + f.getClass());
+		}
+
+	}
+	
+	public class ClownFish extends Fish{
+
+		Character charc = new Character();
+		
+		public ClownFish()
+		{
+			charc.setSize("small");
+			charc.setColor("orange");
+		}
+		
+		@Override
+		public void swim() {
+				System.out.println("Clown Fish swimming");
+		}
+		
+		public void makeJoke()
+		{
+			System.out.println("Clown Fish joking");
+		}
+
+	}
