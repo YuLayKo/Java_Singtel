@@ -1,0 +1,9 @@
+1. 	public interface Animal {
+	public void sing();
+	public void fly();
+	}
+	
+	abstract class Butterfly implements Animal{
+	public void sing(){};
+	public abstract void fly();
+	}
