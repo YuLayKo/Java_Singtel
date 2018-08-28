@@ -1,0 +1,41 @@
+4.a.b.c public class Parrort extends Bird
+	 {
+		public void sing(Animal nearBy)
+		{
+			if(Animal instanceof Dog)
+			{
+				System.out.println("Woof Woof");
+			}
+			else if(Animal instanceof Cat)
+			{
+				System.out.println("Meow");
+			}
+			else if(Animal instanceof Rooster)
+			{
+				System.out.println("Cock-a-doodle-do");
+			}
+					
+		}
+		
+		public void sing()
+		{
+			System.out.println("I am singing");
+		}
+		
+	 }
+	 
+	 d. public class Parrot extends Bird
+		{
+			
+			public void sing(Object nearBy)
+			{
+				if(Object instanceof Animal)
+				{
+				}
+				else 
+				{
+				
+				}
+			}
+			
+		}
