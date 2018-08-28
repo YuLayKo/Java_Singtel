@@ -1,0 +1,19 @@
+1. public interface Animal
+	{
+		void swim();
+		void sing();
+		void walk();
+	}
+	
+	public class Character
+	{
+		
+	}
+	
+	abstract class Fish implements Animal
+	{
+	public abstract void swim();
+	
+	public void sing(){};
+	public void walk(){};
+	}
