@@ -1,0 +1,24 @@
+2.	public interface Animal {
+	public void sing();
+	public void fly();
+	public void walk();
+	}
+	
+	abstract class Butterfly implements Animal{
+	public void sing(){};
+	public abstract void fly();
+	}
+	
+	abstract class Caterpillar extends Butterfly implements Animal{
+	public abstract void walk();
+	public void fly(){};
+	}
+	
+	public class TestCaterpillar extends Caterpillar{
+	@Override
+	public void walk() {
+		System.out.println("Caterpillar walking");
+		
+	}
+
+}
