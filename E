@@ -1,0 +1,45 @@
+public class CountAnimal {
+	public static void main(String[] args)
+	{
+		Animal[] animals = new Animal[]{new Bird(),//fly,  walk, sing
+										new Duck(),
+										new Chicken(),         
+										new Rooster(),         
+										new Parrot(),         
+										new Fish(),  //swim       
+										new Shark(),        
+										new Clownfish(),         
+										new Dolhpin(),         
+										new Frog(),         
+										new Dog(),         //walk
+										new Butterfly(),         
+										new Cat() };       //walk
+		int noofFly = 0;
+		int noofWalk = 0;
+		int noofSing = 0;
+		int noofSwim = 0;
+		for(Animal a: animals)
+		{
+			if(a instanceof Bird)
+			{
+				noofFly++;
+				noofWalk++;
+				noofSing++;
+			}
+			else if(a instanceof Fish)
+			{
+				noofSwim++;
+			}
+			else
+			{
+				noofWalk++;
+			}
+		}
+		
+		System.out.println("Number of Fly: " + noofFly);
+		System.out.println("Number of Walk: " + noofWalk);
+		System.out.println("Number of Sing: " + noofSing);
+		System.out.println("Number of Swim: " + noofSwim);
+	}
+
+}
