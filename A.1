@@ -1,0 +1,38 @@
+1. public class Bird extends Animal
+{
+	public void sing()
+	{
+		System.out.println("I am singing ::::::");
+	}
+}
+
+
+a. @Test
+   public void testString()
+   {
+	Bird bird = new Bird();
+	System.out.println("result" + bird.sing());
+   }
+   
+b. public interface Animal
+	{
+		public void walk();
+	} 
+	
+	public class Bird implements Animal
+	{
+		public void walk()
+		{
+			System.out.println("I am walking");
+		}
+		
+		public void fly()
+		{
+			System.out.println("I am flying");
+		}
+		
+		public void sing()
+		{
+			System.out.println("I am singing");
+		}
+	}
