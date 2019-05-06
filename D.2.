@@ -17,7 +17,7 @@
 	public class TestCaterpillar extends Caterpillar{
 	@Override
 	public void walk() {
-		System.out.println("Caterpillar walking");
+		System.out.println("Caterpillar walking!");
 		
 	}
 
