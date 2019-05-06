@@ -36,6 +36,7 @@ public class CountAnimal {
 			}
 		}
 		
+		System.out.println(":::::::::::::print out::::::::::::::::;");
 		System.out.println("Number of Fly: " + noofFly);
 		System.out.println("Number of Walk: " + noofWalk);
 		System.out.println("Number of Sing: " + noofSing);
