@@ -47,7 +47,7 @@ public class TestLanguage {
 	
 	public static void main(String[] args)
 	{
-		Rooster.sing(new Language("Danish"));
+		Rooster.sing(new Language("Spanish"));
 		Rooster.sing(new Language("Dutch"));
 		Rooster.sing(new Language("Myanmar"));
 		
